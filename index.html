@@ -11,21 +11,28 @@
        Palette (no gradients)
        #DEE1DD #C4CDC1 #99AEAD #6D9197 #658B6F #2F575D #28363D
        ------------------------------------- */
-    :root{
-      /* raw palette */
-      --p1:#DEE1DD; --p2:#C4CDC1; --p3:#99AEAD; --p4:#6D9197; --p5:#658B6F; --p6:#2F575D; --p7:#28363D;
-      /* roles */
-      --bg:var(--p1);
-      --surface:#ffffff;
-      --ink:var(--p7);
-      --ink-2:var(--p6);
-      --line:var(--p3);
-      --muted:var(--p2);
-      --accent:var(--p5);
-      --cta:var(--p6);
-      --cta-2:var(--p4);
-      --shadow:0 6px 18px rgba(0,0,0,.08);
-    }
+      :root {
+          /* raw palette */
+          --p1: #DEE1DD;
+          --p2: #C4CDC1;
+          --p3: #99AEAD;
+          --p4: #6D9197;
+          --p5: #658B6F;
+          --p6: #2F575D;
+          --p7: #28363D;
+          /* roles */
+          --bg: var(--p1);
+          --surface: #ffffff;
+          --ink: var(--p7);
+          --ink-2: var(--p6);
+          --line: var(--p3);
+          --muted: var(--p2);
+          --accent: var(--p5);
+          --cta: var(--p6);
+          --cta-2: var(--p4);
+          /* no shadows anywhere */
+          --shadow: none;
+      }
     @media (prefers-color-scheme: dark){
       :root{--surface:#1e272a;--bg:#141d1f;--ink:#e7ecec;--ink-2:#f5f7f7;--line:#3e585d;--muted:#1a2629;--accent:var(--p5);--cta:var(--p6);--cta-2:var(--p4)}
     }
