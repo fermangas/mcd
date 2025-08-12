@@ -1,521 +1,1825 @@
+Skip to content
+Chat history
+
+You said:
+On this website:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="title">Mónica Carreón Díez | Paralegal & Notary in Toronto</title>
-  <meta name="description" data-i18n="meta_desc" content="Fast, friendly notarization and paralegal services in Toronto & the GTA." />
-  <meta name="color-scheme" content="light dark">
-  <style>
-    /* -------------------------------------
-       Palette (no gradients)
-       #DEE1DD #C4CDC1 #99AEAD #6D9197 #658B6F #2F575D #28363D
-       ------------------------------------- */
-      :root {
-          /* raw palette */
-          --p1: #2b6777;
-          --p2: #C4CDC1;
-          --p3: #99AEAD;
-          --p4: #6D9197;
-          --p5: #658B6F;
-          --p6: #2F575D;
-          --p7: #28363D;
-          /* roles */
-          --bg: var(--p1);
-          --surface: #ffffff;
-          --ink: var(--p7);
-          --ink-2: var(--p6);
-          --line: var(--p3);
-          --muted: var(--p2);
-          --accent: var(--p5);
-          --cta: var(--p6);
-          --cta-2: var(--p4);
-          /* no shadows anywhere */
-          --shadow: none;
-      }
-    @media (prefers-color-scheme: dark){
-      :root{--surface:#1e272a;--bg:#141d1f;--ink:#e7ecec;--ink-2:#f5f7f7;--line:#3e585d;--muted:#1a2629;--accent:var(--p5);--cta:var(--p6);--cta-2:var(--p4)}
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,'Helvetica Neue',Arial;color:var(--ink);background:var(--bg)}
-    a{color:var(--ink-2);text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="title">Mónica Carreón Díez | Paralegal & Notary in Toronto</title>
+    <meta name="description" data-i18n="meta_desc" content="Fast, friendly notarization and paralegal services in Toronto & the GTA." />
+    <meta name="color-scheme" content="light dark">
+    <style>
+         /* -------------------------------------
+        Palette (no gradients)
+        #DEE1DD #C4CDC1 #99AEAD #6D9197 #658B6F #2F575D #28363D
+        ------------------------------------- */
+         :root {
+             /* raw palette */
+             --p1: #DEE1DD;
+             --p2: #C4CDC1;
+             --p3: #99AEAD;
+             --p4: #6D9197;
+             --p5: #658B6F;
+             --p6: #2F575D;
+             --p7: #28363D;
+             /* roles */
+             --bg: var(--p1);
+             --surface: #ffffff;
+             --ink: var(--p7);
+             --ink-2: var(--p6);
+             --line: var(--p3);
+             --muted: var(--p2);
+             --accent: var(--p5);
+             --cta: var(--p6);
+             --cta-2: var(--p4);
+             --shadow: 0 6px 18px rgba(0,0,0,.08);
+         }
 
-    /* Header */
-    header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:4px solid var(--p3)}
-    .bar{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:10px}
-    .logo{width:34px;height:34px;border-radius:8px;background:var(--p6);color:#fff;display:grid;place-items:center;font-weight:800}
-    .title{font-weight:700}
-    nav a{margin:0 10px;padding:6px 4px;border-bottom:2px solid transparent}
-    nav a:hover{border-color:var(--p4)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--cta);background:var(--cta);color:#fff;padding:10px 14px;border-radius:10px;font-weight:600}
-    .btn:hover{background:var(--cta-2);border-color:var(--cta-2)}
-    .btn.ghost{background:transparent;color:var(--cta);border-color:var(--cta)}
-    .lang{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 12px;border-radius:10px;margin-left:8px}
+         @media (prefers-color-scheme: dark) {
+             :root {
+                 --surface: #1e272a;
+                 --bg: #141d1f;
+                 --ink: #e7ecec;
+                 --ink-2: #f5f7f7;
+                 --line: #3e585d;
+                 --muted: #1a2629;
+                 --accent: var(--p5);
+                 --cta: var(--p6);
+                 --cta-2: var(--p4)
+             }
+         }
 
-    @media (max-width:900px){
-      nav{display:none}
-      .menu-toggle{display:inline-flex;border:1px solid var(--line);background:var(--surface);padding:8px 12px;border-radius:10px}
-      #menu{display:none;border-top:1px solid var(--line)}
-      #menu a{display:block;padding:12px 0;border-bottom:1px dashed var(--line)}
-      #menu .cta{padding:16px 0}
-    }
+         * {
+             box-sizing: border-box
+         }
 
-    /* Sections */
-    section{padding:48px 0}
-    h1{font-size:40px;margin:0 0 10px;color:var(--ink)}
-    h2{font-size:28px;margin:0 0 8px;color:var(--ink)}
-    p.lead{margin:0 0 10px;color:var(--ink)}
+         html, body {
+             margin: 0;
+             padding: 0;
+             font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,'Helvetica Neue',Arial;
+             color: var(--ink);
+             background: var(--bg)
+         }
 
-    .pill{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;background:var(--surface);margin:6px 6px 0 0}
-    /* pills cycle through palette */
-    .pill:nth-child(1){background:var(--p2)}
-    .pill:nth-child(2){background:var(--p3)}
-    .pill:nth-child(3){background:var(--p4);color:#fff;border-color:var(--p4)}
-    .pill:nth-child(4){background:var(--p5);color:#fff;border-color:var(--p5)}
+         a {
+             color: var(--ink-2);
+             text-decoration: none
+         }
 
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
-    @media (max-width:620px){.grid{grid-template-columns:1fr}}
-    .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:16px}
+         .container {
+             max-width: 1100px;
+             margin: 0 auto;
+             padding: 0 20px
+         }
 
-    /* Hero */
-    .hero .card ul{padding-left:18px}
+         /* Header */
+         header {
+             position: sticky;
+             top: 0;
+             z-index: 20;
+             background: var(--bg);
+             border-bottom: 4px solid var(--p3)
+         }
 
-    /* Services with color accents */
-    #services .card{border-top:4px solid var(--p5)}
-    #services .card:nth-child(2n){border-top-color:var(--p4)}
-    #services .card:nth-child(3n){border-top-color:var(--p6)}
+         .bar {
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             padding: 10px 0
+         }
 
-    /* Process */
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .steps .card{border-left:4px solid var(--p3)}
-    .steps .card:nth-child(2){border-left-color:var(--p4)}
-    .steps .card:nth-child(3){border-left-color:var(--p5)}
-    .num{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--accent);color:#fff;font-weight:700}
-    @media (max-width:900px){.steps{grid-template-columns:1fr}}
+         .brand {
+             display: flex;
+             align-items: center;
+             gap: 10px
+         }
 
-    /* Fees */
-    #fees .card{background:var(--surface)}
-    #fees .card:nth-child(1){border-color:var(--p3)}
-    #fees .card:nth-child(2){border-color:var(--p4)}
-    #fees .card:nth-child(3){border-color:var(--p5)}
+         .logo {
+             width: 34px;
+             height: 34px;
+             border-radius: 8px;
+             background: var(--p6);
+             color: #fff;
+             display: grid;
+             place-items: center;
+             font-weight: 800
+         }
 
-    /* About */
-    .about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
-    @media (max-width:900px){.about-grid{grid-template-columns:1fr}}
-    .profile{padding:0}
-      .avatar {
-          width: 100%;
-          aspect-ratio: 1200/1115; /* fits 1200 x 1115 exactly */
-          border-radius: 12px;
-          border: 3px solid var(--p3);
-          object-fit: cover;
-          background: var(--muted);
-      }
-    .profile-caption{margin:.6rem 0 0;font-size:14px;opacity:.85}
+         .title {
+             font-weight: 700
+         }
 
-    /* Form */
-    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    form .full{grid-column:1/-1}
-    label{font-size:14px}
-    input,select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:inherit}
-    textarea{min-height:110px}
+         nav a {
+             margin: 0 10px;
+             padding: 6px 4px;
+             border-bottom: 2px solid transparent
+         }
 
-    /* Footer */
-    footer{padding:28px 0;border-top:4px solid var(--p4);background:var(--p7);color:#f2f6f6}
-    footer a{color:#e6f2f2}
-    .foot-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    @media (max-width:900px){.foot-grid{grid-template-columns:1fr}}
-    .logo--footer{background:var(--p4)}
-  </style>
+             nav a:hover {
+                 border-color: var(--p4)
+             }
+
+         .btn {
+             display: inline-flex;
+             align-items: center;
+             justify-content: center;
+             border: 2px solid var(--cta);
+             background: var(--cta);
+             color: #fff;
+             padding: 10px 14px;
+             border-radius: 10px;
+             font-weight: 600
+         }
+
+             .btn:hover {
+                 background: var(--cta-2);
+                 border-color: var(--cta-2)
+             }
+
+             .btn.ghost {
+                 background: transparent;
+                 color: var(--cta);
+                 border-color: var(--cta)
+             }
+
+         .lang {
+             border: 1px solid var(--line);
+             background: var(--surface);
+             color: var(--ink);
+             padding: 8px 12px;
+             border-radius: 10px;
+             margin-left: 8px
+         }
+
+         @media (max-width:900px) {
+             nav {
+                 display: none
+             }
+
+             .menu-toggle {
+                 display: inline-flex;
+                 border: 1px solid var(--line);
+                 background: var(--surface);
+                 padding: 8px 12px;
+                 border-radius: 10px
+             }
+
+             #menu {
+                 display: none;
+                 border-top: 1px solid var(--line)
+             }
+
+                 #menu a {
+                     display: block;
+                     padding: 12px 0;
+                     border-bottom: 1px dashed var(--line)
+                 }
+
+                 #menu .cta {
+                     padding: 16px 0
+                 }
+         }
+
+         /* Sections */
+         section {
+             padding: 48px 0
+         }
+
+         h1 {
+             font-size: 40px;
+             margin: 0 0 10px;
+             color: var(--ink)
+         }
+
+         h2 {
+             font-size: 28px;
+             margin: 0 0 8px;
+             color: var(--ink)
+         }
+
+         p.lead {
+             margin: 0 0 10px;
+             color: var(--ink)
+         }
+
+         .pill {
+             display: inline-block;
+             border: 1px solid var(--line);
+             padding: 6px 10px;
+             border-radius: 999px;
+             background: var(--surface);
+             margin: 6px 6px 0 0
+         }
+             /* pills cycle through palette */
+             .pill:nth-child(1) {
+                 background: var(--p2)
+             }
+
+             .pill:nth-child(2) {
+                 background: var(--p3)
+             }
+
+             .pill:nth-child(3) {
+                 background: var(--p4);
+                 color: #fff;
+                 border-color: var(--p4)
+             }
+
+             .pill:nth-child(4) {
+                 background: var(--p5);
+                 color: #fff;
+                 border-color: var(--p5)
+             }
+
+         .grid {
+             display: grid;
+             grid-template-columns: repeat(3,1fr);
+             gap: 14px
+         }
+
+         @media (max-width:900px) {
+             .grid {
+                 grid-template-columns: 1fr 1fr
+             }
+         }
+
+         @media (max-width:620px) {
+             .grid {
+                 grid-template-columns: 1fr
+             }
+         }
+
+         .card {
+             background: var(--surface);
+             border: 1px solid var(--line);
+             border-radius: 14px;
+             box-shadow: var(--shadow);
+             padding: 16px
+         }
+
+         /* Hero */
+         .hero .card ul {
+             padding-left: 18px
+         }
+
+         /* Services with color accents */
+         #services .card {
+             border-top: 4px solid var(--p5)
+         }
+
+             #services .card:nth-child(2n) {
+                 border-top-color: var(--p4)
+             }
+
+             #services .card:nth-child(3n) {
+                 border-top-color: var(--p6)
+             }
+
+         /* Process */
+         .steps {
+             display: grid;
+             grid-template-columns: repeat(3,1fr);
+             gap: 14px
+         }
+
+             .steps .card {
+                 border-left: 4px solid var(--p3)
+             }
+
+                 .steps .card:nth-child(2) {
+                     border-left-color: var(--p4)
+                 }
+
+                 .steps .card:nth-child(3) {
+                     border-left-color: var(--p5)
+                 }
+
+         .num {
+             display: inline-grid;
+             place-items: center;
+             width: 28px;
+             height: 28px;
+             border-radius: 8px;
+             background: var(--accent);
+             color: #fff;
+             font-weight: 700
+         }
+
+         @media (max-width:900px) {
+             .steps {
+                 grid-template-columns: 1fr
+             }
+         }
+
+         /* Fees */
+         #fees .card {
+             background: var(--surface)
+         }
+
+             #fees .card:nth-child(1) {
+                 border-color: var(--p3)
+             }
+
+             #fees .card:nth-child(2) {
+                 border-color: var(--p4)
+             }
+
+             #fees .card:nth-child(3) {
+                 border-color: var(--p5)
+             }
+
+         /* About */
+         .about-grid {
+             display: grid;
+             grid-template-columns: 1.2fr .8fr;
+             gap: 16px
+         }
+
+         @media (max-width:900px) {
+             .about-grid {
+                 grid-template-columns: 1fr
+             }
+         }
+
+         .profile {
+             padding: 0
+         }
+
+         .avatar {
+             width: 100%;
+             aspect-ratio: 4/3;
+             border-radius: 12px;
+             border: 3px solid var(--p3);
+             object-fit: cover;
+             background: var(--muted)
+         }
+
+         .profile-caption {
+             margin: .6rem 0 0;
+             font-size: 14px;
+             opacity: .85
+         }
+
+         /* Form */
+         form {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             gap: 12px
+         }
+
+             form .full {
+                 grid-column: 1/-1
+             }
+
+         label {
+             font-size: 14px
+         }
+
+         input, select, textarea {
+             width: 100%;
+             padding: 10px;
+             border: 1px solid var(--line);
+             border-radius: 10px;
+             background: var(--surface);
+             color: inherit
+         }
+
+         textarea {
+             min-height: 110px
+         }
+
+         /* Footer */
+         footer {
+             padding: 28px 0;
+             border-top: 4px solid var(--p4);
+             background: var(--p7);
+             color: #f2f6f6
+         }
+
+             footer a {
+                 color: #e6f2f2
+             }
+
+         .foot-grid {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             gap: 16px
+         }
+
+         @media (max-width:900px) {
+             .foot-grid {
+                 grid-template-columns: 1fr
+             }
+         }
+
+         .logo--footer {
+             background: var(--p4)
+         }
+    </style>
 </head>
 <body>
-<header>
-  <div class="container bar">
-    <div class="brand">
-      <div class="logo" aria-hidden="true">M</div>
-      <div>
-        <div class="title" data-i18n="brand">Mónica Carreón Díez</div>
-        <div style="opacity:.85;font-size:13px" data-i18n="brand_sub">Paralegal • Notary & Commissioner — Toronto</div>
-      </div>
-    </div>
-    <nav aria-label="Primary">
-      <a href="#services" data-i18n="nav_services">Services</a>
-      <a href="#process" data-i18n="nav_process">How it works</a>
-      <a href="#fees" data-i18n="nav_fees">Fees</a>
-      <a href="#about" data-i18n="nav_about">About</a>
-      <a href="#faq" data-i18n="nav_faq">FAQ</a>
-      <a href="#contact" class="btn" data-i18n="nav_book">Book</a>
-      <button class="lang" id="langBtn" aria-label="Switch language">ES</button>
-    </nav>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="menu" id="menuBtn">Menu ▾</button>
-  </div>
-  <div id="menu" class="container">
-    <a href="#services" data-i18n="nav_services">Services</a>
-    <a href="#process" data-i18n="nav_process">How it works</a>
-    <a href="#fees" data-i18n="nav_fees">Fees</a>
-    <a href="#about" data-i18n="nav_about">About</a>
-    <a href="#faq" data-i18n="nav_faq">FAQ</a>
-    <div class="cta"><a href="#contact" class="btn" data-i18n="nav_book">Book</a></div>
-  </div>
-</header>
+    <header>
+        <div class="container bar">
+            <div class="brand">
+                <div class="logo" aria-hidden="true">M</div>
+                <div>
+                    <div class="title" data-i18n="brand">Mónica Carreón Díez</div>
+                    <div style="opacity:.85;font-size:13px" data-i18n="brand_sub">Paralegal • Notary & Commissioner — Toronto</div>
+                </div>
+            </div>
+            <nav aria-label="Primary">
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#process" data-i18n="nav_process">How it works</a>
+                <a href="#fees" data-i18n="nav_fees">Fees</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#faq" data-i18n="nav_faq">FAQ</a>
+                <a href="#contact" class="btn" data-i18n="nav_book">Book</a>
+                <button class="lang" id="langBtn" aria-label="Switch language">ES</button>
+            </nav>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="menu" id="menuBtn">Menu ▾</button>
+        </div>
+        <div id="menu" class="container">
+            <a href="#services" data-i18n="nav_services">Services</a>
+            <a href="#process" data-i18n="nav_process">How it works</a>
+            <a href="#fees" data-i18n="nav_fees">Fees</a>
+            <a href="#about" data-i18n="nav_about">About</a>
+            <a href="#faq" data-i18n="nav_faq">FAQ</a>
+            <div class="cta"><a href="#contact" class="btn" data-i18n="nav_book">Book</a></div>
+        </div>
+    </header>
 
-<main id="main">
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <h1 data-i18n="hero_h1">Notarization made easy.</h1>
-            <p class="lead" data-i18n="hero_p">Fast, friendly, and clear. Toronto & the GTA.</p>
-            <p>
-                <span class="pill" data-i18n="pill1">Same‑day</span>
-                <span class="pill" data-i18n="pill2">Mobile</span>
-                <span class="pill" data-i18n="pill3">Evenings</span>
-            </p>
-            <p>
-                <a class="btn" href="#contact" data-i18n="hero_cta1">Book now</a>
-                <a class="btn ghost" href="#services" data-i18n="hero_cta2">View services</a>
-            </p>
-            <div class="card" aria-label="Key info">
-                <ul>
-                    <li data-i18n="info_common">Common docs: affidavits, declarations, certified copies, travel consent, invitations, OSAP/education, real‑estate & business.</li>
-                    <li data-i18n="info_bring">Bring: government photo ID and unsigned documents.</li>
-                    <li data-i18n="info_time">Time: usually 10–20 minutes.</li>
-                    <li data-i18n="info_area">Area: Toronto + mobile GTA.</li>
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero_h1">Notarization made easy.</h1>
+                <p class="lead" data-i18n="hero_p">Fast, friendly, and clear. Toronto & the GTA.</p>
+                <p>
+                    <span class="pill" data-i18n="pill1">Same‑day</span>
+                    <span class="pill" data-i18n="pill2">Mobile</span>
+                    <span class="pill" data-i18n="pill3">Evenings</span>
+                </p>
+                <p>
+                    <a class="btn" href="#contact" data-i18n="hero_cta1">Book now</a>
+                    <a class="btn ghost" href="#services" data-i18n="hero_cta2">View services</a>
+                </p>
+                <div class="card" aria-label="Key info">
+                    <ul>
+                        <li data-i18n="info_common">Common docs: affidavits, declarations, certified copies, travel consent, invitations, OSAP/education, real‑estate & business.</li>
+                        <li data-i18n="info_bring">Bring: government photo ID and unsigned documents.</li>
+                        <li data-i18n="info_time">Time: usually 10–20 minutes.</li>
+                        <li data-i18n="info_area">Area: Toronto + mobile GTA.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services">
+            <div class="container">
+                <h2 data-i18n="svc_h2">Services</h2>
+                <div class="grid">
+                    <div class="card"><strong data-i18n="svc1_t">Affidavits & Statutory Declarations</strong><p data-i18n="svc1_d">Sworn/affirmed statements for government, school, court, or work.</p></div>
+                    <div class="card"><strong data-i18n="svc2_t">Certified True Copies</strong><p data-i18n="svc2_d">We confirm a copy matches the original (passports, IDs, transcripts).</p></div>
+                    <div class="card"><strong data-i18n="svc3_t">Travel Consent Letters</strong><p data-i18n="svc3_d">For children traveling without one or both parents/guardians.</p></div>
+                    <div class="card"><strong data-i18n="svc4_t">Invitation Letters</strong><p data-i18n="svc4_d">Notarized invitations for visa/immigration files.</p></div>
+                    <div class="card"><strong data-i18n="svc5_t">Commissioner of Oaths</strong><p data-i18n="svc5_d">We witness oaths/affirmations where a commissioner is required.</p></div>
+                    <div class="card"><strong data-i18n="svc6_t">Education & OSAP</strong><p data-i18n="svc6_d">Forms for admissions and financial aid.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process">
+            <div class="container">
+                <h2 data-i18n="proc_h2">How it works</h2>
+                <div class="steps">
+                    <div class="card"><span class="num">1</span> <strong data-i18n="proc1_t">Prepare</strong><p data-i18n="proc1_d">Bring ID and unsigned documents.</p></div>
+                    <div class="card"><span class="num">2</span> <strong data-i18n="proc2_t">Book</strong><p data-i18n="proc2_d">Request a time — same‑day, mobile, or evening.</p></div>
+                    <div class="card"><span class="num">3</span> <strong data-i18n="proc3_t">Meet</strong><p data-i18n="proc3_d">We verify, answer questions, and seal.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEES -->
+        <section id="fees">
+            <div class="container">
+                <h2 data-i18n="fees_h2">Fees</h2>
+                <div class="grid">
+                    <div class="card"><strong data-i18n="fees1_t">Single document</strong><p data-i18n="fees1_d">Includes one seal and ID check.</p></div>
+                    <div class="card"><strong data-i18n="fees2_t">Multiple documents</strong><p data-i18n="fees2_d">Bundled pricing for extra seals/copies.</p></div>
+                    <div class="card"><strong data-i18n="fees3_t">Mobile / after‑hours</strong><p data-i18n="fees3_d">Quoted by distance and time.</p></div>
+                </div>
+                <p style="font-size:13px;opacity:.85" data-i18n="fees_note">You’ll receive a firm quote before we proceed. Paralegal services are regulated in Ontario. This is general info, not legal advice.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <h2 data-i18n="about_h2">About</h2>
+                <div class="about-grid">
+                    <div>
+                        <p data-i18n="about_p1">I offer a calm, humane experience for everyday legal documents.</p>
+                        <ul>
+                            <li data-i18n="about_b1">Kind support for sensitive situations</li>
+                            <li data-i18n="about_b2">Clear checklists so you bring what’s needed</li>
+                            <li data-i18n="about_b3">Flexible scheduling within the GTA</li>
+                        </ul>
+                    </div>
+                    <img class="avatar" src="profile.jpg" alt="Portrait of Mónica Carreón Díez" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <div class="container">
+                <h2 data-i18n="faq_h2">FAQ</h2>
+                <details><summary data-i18n="faq1_q">What should I bring?</summary><p data-i18n="faq1_a">Government photo ID and the unsigned documents.</p></details>
+                <details><summary data-i18n="faq2_q">Can you certify a copy of my ID?</summary><p data-i18n="faq2_a">Yes — bring the original to compare with the copy.</p></details>
+                <details><summary data-i18n="faq3_q">Do you offer mobile or evenings?</summary><p data-i18n="faq3_a">Yes, when scheduling allows. Fees quoted in advance.</p></details>
+                <details><summary data-i18n="faq4_q">Is this legal advice?</summary><p data-i18n="faq4_a">No. Notarization/commissioning confirms identity, signatures, or copies.</p></details>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <h2 data-i18n="contact_h2">Book a notarization</h2>
+                <p class="lead" data-i18n="contact_p">Tell us what you need and your preferred time.</p>
+                <form id="contactForm" novalidate>
+                    <div>
+                        <label for="name" data-i18n="f_name_l">Full name</label>
+                        <input id="name" name="name" autocomplete="name" required placeholder="Jane Doe" />
+                    </div>
+                    <div>
+                        <label for="email" data-i18n="f_email_l">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+                    </div>
+                    <div>
+                        <label for="phone" data-i18n="f_phone_l">Phone (optional)</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(647) 555‑0123" />
+                    </div>
+                    <div>
+                        <label for="service" data-i18n="f_service_l">Service</label>
+                        <select id="service" name="service" required></select>
+                    </div>
+                    <div class="full">
+                        <label for="msg" data-i18n="f_msg_l">Details</label>
+                        <textarea id="msg" name="message" data-i18n-placeholder="f_msg_ph" placeholder="Document name, number of copies, preferred time…" required></textarea>
+                    </div>
+                    <div class="full">
+                        <button class="btn" type="submit" data-i18n="f_submit">Request</button>
+                        <span id="status" class="status" role="status" aria-live="polite"></span>
+                    </div>
+                    <p class="full" style="font-size:13px;opacity:.85" data-i18n="privacy">We respect your privacy and do not share your information.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container foot-grid">
+            <div>
+                <div class="brand" style="margin-bottom:8px">
+                    <div class="logo logo--footer" aria-hidden="true">M</div>
+                    <div>
+                        <div class="title" data-i18n="brand">Mónica Carreón Díez</div>
+                        <div style="opacity:.9;font-size:13px" data-i18n="brand_sub">Paralegal • Notary & Commissioner — Toronto</div>
+                    </div>
+                </div>
+                <p style="margin:8px 0"><a href="mailto:monica@carreondiez.com">monica@carreondiez.com</a> • <a href="tel:+14168936565">(416) 893-6565</a></p>
+                <p style="font-size:12px;opacity:.9;margin-top:8px">© <span id="year"></span> <span data-i18n="brand">Mónica Carreón Díez</span>. <span data-i18n="disclaimer">General info only — not legal advice.</span></p>
+            </div>
+            <div>
+                <h4 style="margin:0 0 8px" data-i18n="links_h4">Links</h4>
+                <ul style="list-style:none;margin:0;padding:0;display:grid;gap:8px">
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#fees" data-i18n="nav_fees">Fees</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="https://maps.google.com/?q=Toronto+ON" target="_blank" rel="noopener" data-i18n="link_maps">Find us on Google Maps</a></li>
                 </ul>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <div class="container">
-            <h2 data-i18n="svc_h2">Services</h2>
-            <div class="grid">
-                <div class="card"><strong data-i18n="svc1_t">Affidavits & Statutory Declarations</strong><p data-i18n="svc1_d">Sworn/affirmed statements for government, school, court, or work.</p></div>
-                <div class="card"><strong data-i18n="svc2_t">Certified True Copies</strong><p data-i18n="svc2_d">We confirm a copy matches the original (passports, IDs, transcripts).</p></div>
-                <div class="card"><strong data-i18n="svc3_t">Travel Consent Letters</strong><p data-i18n="svc3_d">For children traveling without one or both parents/guardians.</p></div>
-                <div class="card"><strong data-i18n="svc4_t">Invitation Letters</strong><p data-i18n="svc4_d">Notarized invitations for visa/immigration files.</p></div>
-                <div class="card"><strong data-i18n="svc5_t">Commissioner of Oaths</strong><p data-i18n="svc5_d">We witness oaths/affirmations where a commissioner is required.</p></div>
-                <div class="card"><strong data-i18n="svc6_t">Education & OSAP</strong><p data-i18n="svc6_d">Forms for admissions and financial aid.</p></div>
-            </div>
-        </div>
-    </section>
+    <script>
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+        menuBtn?.addEventListener('click', () => {
+            const open = menu.style.display === 'block';
+            menu.style.display = open ? 'none' : 'block';
+            menuBtn.setAttribute('aria-expanded', String(!open));
+        });
 
-    <!-- PROCESS -->
-    <section id="process">
-        <div class="container">
-            <h2 data-i18n="proc_h2">How it works</h2>
-            <div class="steps">
-                <div class="card"><span class="num">1</span> <strong data-i18n="proc1_t">Prepare</strong><p data-i18n="proc1_d">Bring ID and unsigned documents.</p></div>
-                <div class="card"><span class="num">2</span> <strong data-i18n="proc2_t">Book</strong><p data-i18n="proc2_d">Request a time — same‑day, mobile, or evening.</p></div>
-                <div class="card"><span class="num">3</span> <strong data-i18n="proc3_t">Meet</strong><p data-i18n="proc3_d">We verify, answer questions, and seal.</p></div>
-            </div>
-        </div>
-    </section>
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-    <!-- FEES -->
-    <section id="fees">
-        <div class="container">
-            <h2 data-i18n="fees_h2">Fees</h2>
-            <div class="grid">
-                <div class="card"><strong data-i18n="fees1_t">Single document</strong><p data-i18n="fees1_d">Includes one seal and ID check.</p></div>
-                <div class="card"><strong data-i18n="fees2_t">Multiple documents</strong><p data-i18n="fees2_d">Bundled pricing for extra seals/copies.</p></div>
-                <div class="card"><strong data-i18n="fees3_t">Mobile / after‑hours</strong><p data-i18n="fees3_d">Quoted by distance and time.</p></div>
-            </div>
-            <p style="font-size:13px;opacity:.85" data-i18n="fees_note">You’ll receive a firm quote before we proceed. Paralegal services are regulated in Ontario. This is general info, not legal advice.</p>
-        </div>
-    </section>
+        // i18n strings
+        const i18n = {
+            en: {
+                title: 'Mónica Carreón Díez | Paralegal & Notary in Toronto',
+                meta_desc: 'Fast, friendly notarization and paralegal services in Toronto & the GTA.',
+                brand: 'Mónica Carreón Díez',
+                brand_sub: 'Paralegal • Notary & Commissioner — Toronto',
+                nav_services: 'Services', nav_process: 'How it works', nav_fees: 'Fees', nav_about: 'About', nav_faq: 'FAQ', nav_book: 'Book',
+                hero_h1: 'Notarization made easy.', hero_p: 'Fast, friendly, and clear. Toronto & the GTA.',
+                pill1: 'Same‑day', pill2: 'Mobile', pill3: 'Evenings',
+                hero_cta1: 'Book now', hero_cta2: 'View services',
+                info_common: 'Common docs: affidavits, declarations, certified copies, travel consent, invitations, OSAP/education, real‑estate & business.',
+                info_bring: 'Bring: government photo ID and unsigned documents.',
+                info_time: 'Time: usually 10–20 minutes.',
+                info_area: 'Area: Toronto + mobile GTA.',
+                svc_h2: 'Services',
+                svc1_t: 'Affidavits & Statutory Declarations', svc1_d: 'Sworn/affirmed statements for government, school, court, or work.',
+                svc2_t: 'Certified True Copies', svc2_d: 'We confirm a copy matches the original (passports, IDs, transcripts).',
+                svc3_t: 'Travel Consent Letters', svc3_d: 'For children traveling without one or both parents/guardians.',
+                svc4_t: 'Invitation Letters', svc4_d: 'Notarized invitations for visa/immigration files.',
+                svc5_t: 'Commissioner of Oaths', svc5_d: 'We witness oaths/affirmations where a commissioner is required.',
+                svc6_t: 'Education & OSAP', svc6_d: 'Forms for admissions and financial aid.',
+                proc_h2: 'How it works',
+                proc1_t: 'Prepare', proc1_d: 'Bring ID and unsigned documents.',
+                proc2_t: 'Book', proc2_d: 'Request a time — same‑day, mobile, or evening.',
+                proc3_t: 'Meet', proc3_d: 'We verify, answer questions, and seal.',
+                fees_h2: 'Fees',
+                fees1_t: 'Single document', fees1_d: 'Includes one seal and ID check.',
+                fees2_t: 'Multiple documents', fees2_d: 'Bundled pricing for extra seals/copies.',
+                fees3_t: 'Mobile / after‑hours', fees3_d: 'Quoted by distance and time.',
+                fees_note: 'You’ll receive a firm quote before we proceed. Paralegal services are regulated in Ontario. This is general info, not legal advice.',
+                about_h2: 'About',
+                about_p1: 'I offer a calm, humane experience for everyday legal documents.',
+                about_b1: 'Kind support for sensitive situations',
+                about_b2: 'Clear checklists so you bring what’s needed',
+                about_b3: 'Flexible scheduling within the GTA',
+                about_loc: 'Toronto, Ontario • Serving the GTA',
+                faq_h2: 'FAQ',
+                faq1_q: 'What should I bring?', faq1_a: 'Government photo ID and the unsigned documents.',
+                faq2_q: 'Can you certify a copy of my ID?', faq2_a: 'Yes — bring the original to compare with the copy.',
+                faq3_q: 'Do you offer mobile or evenings?', faq3_a: 'Yes, when scheduling allows. Fees quoted in advance.',
+                faq4_q: 'Is this legal advice?', faq4_a: 'No. Notarization/commissioning confirms identity, signatures, or copies.',
+                contact_h2: 'Book a notarization', contact_p: 'Tell us what you need and your preferred time.',
+                f_name_l: 'Full name', f_email_l: 'Email', f_phone_l: 'Phone (optional)', f_service_l: 'Service', f_msg_l: 'Details', f_msg_ph: 'Document name, number of copies, preferred time…', f_submit: 'Request',
+                privacy: 'We respect your privacy and do not share your information.',
+                links_h4: 'Links', link_maps: 'Find us on Google Maps', disclaimer: 'General info only — not legal advice.'
+            },
+            es: {
+                title: 'Mónica Carreón Díez | Paralegal y Notaria en Toronto',
+                meta_desc: 'Servicios de notarización y apoyo paralegal rápidos y amables en Toronto y el GTA.',
+                brand: 'Mónica Carreón Díez',
+                brand_sub: 'Paralegal • Notaria y Comisionada — Toronto',
+                nav_services: 'Servicios', nav_process: 'Proceso', nav_fees: 'Honorarios', nav_about: 'Acerca de', nav_faq: 'Preguntas', nav_book: 'Reservar',
+                hero_h1: 'Notarización sin complicaciones.', hero_p: 'Rápida, amable y clara. Toronto y GTA.',
+                pill1: 'Mismo día', pill2: 'A domicilio', pill3: 'Noches',
+                hero_cta1: 'Reservar', hero_cta2: 'Ver servicios',
+                info_common: 'Documentos comunes: affidávits, declaraciones, copias certificadas, cartas de viaje, cartas de invitación, formularios de estudios/OSAP, bienes raíces y negocios.',
+                info_bring: 'Trae: identificación oficial con foto y documentos sin firmar.',
+                info_time: 'Tiempo: normalmente 10–20 minutos.',
+                info_area: 'Zona: Toronto + servicio móvil en GTA.',
+                svc_h2: 'Servicios',
+                svc1_t: 'Affidávits y Declaraciones Juradas', svc1_d: 'Declaraciones bajo juramento para gobierno, escuela, tribunal o trabajo.',
+                svc2_t: 'Copias Certificadas', svc2_d: 'Confirmamos que la copia coincide con el original (pasaportes, IDs, certificados).',
+                svc3_t: 'Cartas de Consentimiento de Viaje', svc3_d: 'Para menores que viajan sin uno o ambos padres/tutores.',
+                svc4_t: 'Cartas de Invitación', svc4_d: 'Invitaciones notarizadas para trámites de visa/migración.',
+                svc5_t: 'Comisionada de Juramentos', svc5_d: 'Tomamos juramentos/afirmaciones donde se requiere comisionada.',
+                svc6_t: 'Formularios Educativos y OSAP', svc6_d: 'Documentos para admisiones y ayuda financiera.',
+                proc_h2: 'Proceso',
+                proc1_t: 'Prepara', proc1_d: 'Trae tu ID y documentos sin firmar.',
+                proc2_t: 'Agenda', proc2_d: 'Pide hora — mismo día, a domicilio o noche.',
+                proc3_t: 'Reunión', proc3_d: 'Verificamos, resolvemos dudas y sellamos.',
+                fees_h2: 'Honorarios',
+                fees1_t: 'Documento único', fees1_d: 'Incluye un sello y verificación de identidad.',
+                fees2_t: 'Varios documentos', fees2_d: 'Precio conjunto para sellos/copias adicionales.',
+                fees3_t: 'Móvil / fuera de horario', fees3_d: 'Se cotiza por distancia y tiempo.',
+                fees_note: 'Recibirás una cotización firme antes de comenzar. Servicios paralegales regulados en Ontario. Información general; no es asesoría legal.',
+                about_h2: 'Acerca de',
+                about_p1: 'Brindo una experiencia humana y tranquila para documentos cotidianos.',
+                about_b1: 'Acompañamiento amable en situaciones sensibles',
+                about_b2: 'Listas claras para traer lo necesario',
+                about_b3: 'Horarios flexibles en el GTA',
+                about_loc: 'Toronto, Ontario • Servicio en GTA',
+                faq_h2: 'Preguntas',
+                faq1_q: '¿Qué debo llevar?', faq1_a: 'Identificación oficial con foto y documentos sin firmar.',
+                faq2_q: '¿Pueden certificar una copia de mi ID?', faq2_a: 'Sí — trae el original para compararlo.',
+                faq3_q: '¿Ofrecen servicio móvil o por la noche?', faq3_a: 'Sí, según la agenda. Tarifas cotizadas por adelantado.',
+                faq4_q: '¿Es asesoría legal?', faq4_a: 'No. La notarización/commission solo confirma identidad, firmas o copias.',
+                contact_h2: 'Reserva una notarización', contact_p: 'Cuéntanos qué necesitas y tu horario preferido.',
+                f_name_l: 'Nombre completo', f_email_l: 'Correo electrónico', f_phone_l: 'Teléfono (opcional)', f_service_l: 'Servicio', f_msg_l: 'Detalles', f_msg_ph: 'Nombre del documento, número de copias, horario preferido…', f_submit: 'Enviar',
+                privacy: 'Respetamos tu privacidad y no compartimos tu información.',
+                links_h4: 'Enlaces', link_maps: 'Encuéntranos en Google Maps', disclaimer: 'Información general — no es asesoría legal.'
+            }
+        };
 
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="container">
-            <h2 data-i18n="about_h2">About</h2>
-            <div class="about-grid">
+        const serviceOptions = {
+            en: [
+                'Affidavit / Statutory Declaration',
+                'Certified True Copies',
+                'Travel Consent Letter',
+                'Invitation Letter',
+                'Commissioner of Oaths',
+                'Education / OSAP',
+                'Other / Not sure'
+            ],
+            es: [
+                'Affidávit / Declaración Jurada',
+                'Copias Certificadas',
+                'Carta de Consentimiento de Viaje',
+                'Carta de Invitación',
+                'Comisionada de Juramentos',
+                'Educación / OSAP',
+                'Otro / No estoy seguro(a)'
+            ]
+        };
+
+        function setLang(lang) {
+            document.documentElement.setAttribute('lang', lang === 'es' ? 'es' : 'en');
+            // text nodes
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key] !== undefined) {
+                    el.textContent = i18n[lang][key];
+                }
+            });
+            // title + meta
+            document.title = i18n[lang].title;
+            const md = document.querySelector('meta[name="description"]');
+            if (md) md.setAttribute('content', i18n[lang].meta_desc);
+            // placeholder
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (i18n[lang][key] !== undefined) { el.setAttribute('placeholder', i18n[lang][key]); }
+            });
+            // select options
+            const sel = document.getElementById('service');
+            if (sel) {
+                const current = sel.value;
+                sel.innerHTML = '<option value="">' + (lang === 'es' ? 'Elige…' : 'Choose…') + '</option>' +
+                    serviceOptions[lang].map(o => <option>${o}</option>).join('');
+                // try to preserve value if it exists in new list
+                const has = Array.from(sel.options).some(opt => opt.text === current);
+                if (has) sel.value = current;
+            }
+            // buttons
+            const langBtn = document.getElementById('langBtn');
+            if (langBtn) langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
+            localStorage.setItem('lang', lang);
+        }
+
+        // Init lang
+        const saved = localStorage.getItem('lang') || (navigator.language || 'en').slice(0, 2);
+        setLang(saved === 'es' ? 'es' : 'en');
+
+        // Toggle button
+        document.getElementById('langBtn')?.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('lang') === 'es' ? 'en' : 'es';
+            setLang(next);
+        });
+
+        // Simple mailto form handler (replace MAIL_TO if needed)
+        const form = document.getElementById('contactForm');
+        const statusEl = document.getElementById('status');
+        form?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const fd = new FormData(form);
+            const data = Object.fromEntries(fd.entries());
+            if (!data.name || !data.email || !data.service || !data.message) {
+                statusEl.textContent = document.documentElement.lang === 'es' ? 'Completa los campos requeridos.' : 'Please fill required fields.';
+                statusEl.style.color = '#b91c1c';
+                return;
+            }
+            const subject = encodeURIComponent((document.documentElement.lang === 'es' ? 'Solicitud de notarización — ' : 'Notarization request — ') + data.service);
+            const body = encodeURIComponent(Name / Nombre: ${ data.name }
+Email: ${ data.email }
+Phone / Teléfono: ${ data.phone || '-' }
+Service / Servicio: ${ data.service }
+
+Details / Detalles:
+                ${ data.message });
+            const MAIL_TO = 'monica@carreondiez.com';
+            window.location.href = mailto:${ MAIL_TO }?subject = ${ subject }& body=${ body };
+            statusEl.textContent = document.documentElement.lang === 'es' ? 'Abriendo tu correo… Si no se abre, escribe a monica@carreondiez.com.' : 'Opening your email app... If nothing opens, email monica@carreondiez.com.';
+            statusEl.style.color = '#15803d';
+            form.reset();
+        });
+    </script>
+</body>
+</html>
+
+change the spacing so that the portrait.jpg fits a 1200x1115 pixel image. also remove all the shadows from the boxes.
+ChatGPT said:
+
+Thought for 43s
+Got it — here are the precise edits.
+
+1) In your
+<style>
+        block
+        Replace the --shadow and the .avatar rule:
+
+        :root {
+            /* raw palette */
+            --p1: #DEE1DD;
+            --p2: #C4CDC1;
+            --p3: #99AEAD;
+            --p4: #6D9197;
+            --p5: #658B6F;
+            --p6: #2F575D;
+            --p7: #28363D;
+            /* roles */
+            --bg: var(--p1);
+            --surface: #ffffff;
+            --ink: var(--p7);
+            --ink-2: var(--p6);
+            --line: var(--p3);
+            --muted: var(--p2);
+            --accent: var(--p5);
+            --cta: var(--p6);
+            --cta-2: var(--p4);
+            /* no shadows anywhere */
+            --shadow: none;
+        }
+
+        /* ... */
+
+        .avatar {
+            width: 100%;
+            aspect-ratio: 1200/1115; /* fits 1200 x 1115 exactly */
+            border-radius: 12px;
+            border: 3px solid var(--p3);
+            object-fit: cover;
+            background: var(--muted);
+        }
+
+        /* ensure any card using var(--shadow) has no shadow */
+        .card {
+            box-shadow: var(--shadow);
+        }
+
+        (Since all boxes use box-shadow: var(--shadow), setting --shadow:none removes them everywhere.)
+
+        2) In the ABOUT section
+        Change the image filename to portrait.jpg:
+        <!-- ABOUT -->
+        <section id="about" >
+        <div class="container" >
+        <h2 data-i18n="about_h2" > About</h2 >
+        <div class="about-grid" >
+        <div >
+        <p data-i18n="about_p1" > I offer a calm, humane experience for everyday legal documents.</p >
+        <ul >
+        <li data-i18n="about_b1" > Kind support for sensitive situations</li >
+        <li data-i18n="about_b2" > Clear checklists so you bring what’s needed</li >
+        <li data-i18n="about_b3" > Flexible scheduling within the GTA</li >
+        </ul >
+        </div >
+        <img class="avatar" src="portrait.jpg" alt="Portrait of Mónica Carreón Díez" loading="lazy" / >
+        </div >
+        </div >
+        </section >
+        That’s it: the portrait displays with the correct proportions (no cropping from a mismatched aspect), and all box shadows are gone.
+
+        You said:
+        which line number in the original file defines the background colour?
+        ChatGPT said:
+        In your original HTML file, the background color is defined in the CSS at this line:
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,'Helvetica Neue',Arial;
+            color: var(--ink);
+            background: var(--bg)
+        }
+
+        That’s around line 66 in the file you posted.
+
+        --bg itself is set earlier (around line 22) in the :root block:
+
+        --bg:var(--p1);
+        and --p1 is defined as
+
+        --p1:#DEE1DD;
+        So the actual background color is #DEE1DD in light mode (and changes in dark mode).
+
+        You said:
+        the selector for spanish is not visible on mobile. fix
+        ChatGPT said:
+
+        Thought for 25s
+        Here’s a minimal, safe fix so the language toggle is visible on mobile.
+
+        1) HTML — add a mobile toggle button (next to the “Menu” button)
+        Place this inside the header .bar, before the Menu button:
+
+        <button class="lang lang--mobile" id="langBtnMobile" aria-label="Switch language" > ES</button >
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu" id="menuBtn" > Menu ▾</button >
+        2) CSS — show it only on mobile
+        Add:
+        /* mobile language button is hidden on desktop */
+        .lang--mobile {
+            display: none
+        }
+
+        @media (max-width:900px) {
+            .lang--mobile {
+                display: inline-flex
+            }
+        }
+
+        3) JS — keep both buttons in sync
+        Update setLang(lang) to set the label on both buttons:
+
+        function setLang(lang) {
+            document .documentElement.setAttribute('lang', lang === 'es' ? 'es' : 'en');
+            document .querySelectorAll('[data-i18n]').forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        if(i18n[lang][key] !== undefined){ el.textContent = i18n[lang][key]; }
+      });
+            document .title = i18n[lang].title;
+            const md = document.querySelector('meta[name="description"]');
+            if(md) md.setAttribute('content', i18n[lang].meta_desc);
+            document .querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
+        const key = el.getAttribute('data-i18n-placeholder');
+        if(i18n[lang][key] !== undefined){ el.setAttribute('placeholder', i18n[lang][key]); }
+      });
+            const sel = document.getElementById('service');
+            if(sel)
+
+        {
+            const current = sel.value;
+            sel .innerHTML = '<option value="">'+(lang==='es'?'Elige…':'Choose…')+'</option>' + serviceOptions[lang].map(o=>`<option>${o}</option>`).join('');
+            const has = Array.from(sel.options).some(opt=>opt.text===current);
+            if(has) sel.value = current;
+        }
+
+        // update both desktop & mobile language buttons
+        const langBtn = document.getElementById('langBtn');
+        const langBtnMobile = document.getElementById('langBtnMobile');
+        if (langBtn) langBtn.textContent = lang==='es' ? 'EN' : 'ES';
+        if (langBtnMobile) langBtnMobile.textContent = lang==='es' ? 'EN' : 'ES';
+
+        localStorage.setItem('lang', lang);
+        }
+
+        Add a click handler for the new mobile button (keep your existing one for #langBtn):
+
+        document.getElementById('langBtnMobile')?.addEventListener('click', ()=>{
+      const next = document.documentElement.getAttribute('lang')==='es' ? 'en' : 'es';
+      setLang(next);
+    });
+        That’s it—now the language selector appears on small screens and stays in sync with the desktop toggle.
+
+        You said:
+        I don't know what to do with that. write the entire website.
+        ChatGPT said:
+
+        Thought for 14s
+        Here’s the complete, ready-to-paste HTML with your fixes:
+
+        Mobile language toggle added and synced
+
+        Portrait uses portrait.jpg with 1200×1115 ratio
+
+        All shadows removed
+
+        <!DOCTYPE html >
+        <html lang="en" >
+        <head >
+        <meta charset="utf-8" / >
+        <meta name="viewport" content="width=device-width, initial-scale=1" / >
+        <title data-i18n="title" > Mónica Carreón Díez | Paralegal & Notary in Toronto</title >
+        <meta name="description" data-i18n="meta_desc" content="Fast, friendly notarization and paralegal services in Toronto & the GTA." / >
+        <meta name="color-scheme" content="light dark" >
+        <style >
+        /* -------------------------------------
+           Palette (no gradients)
+           #DEE1DD #C4CDC1 #99AEAD #6D9197 #658B6F #2F575D #28363D
+           ------------------------------------- */
+        :root {
+            /* raw palette */
+            --p1: #DEE1DD;
+            --p2: #C4CDC1;
+            --p3: #99AEAD;
+            --p4: #6D9197;
+            --p5: #658B6F;
+            --p6: #2F575D;
+            --p7: #28363D;
+            /* roles */
+            --bg: var(--p1);
+            --surface: #ffffff;
+            --ink: var(--p7);
+            --ink-2: var(--p6);
+            --line: var(--p3);
+            --muted: var(--p2);
+            --accent: var(--p5);
+            --cta: var(--p6);
+            --cta-2: var(--p4);
+            /* remove all shadows everywhere */
+            --shadow: none;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --surface: #1e272a;
+                --bg: #141d1f;
+                --ink: #e7ecec;
+                --ink-2: #f5f7f7;
+                --line: #3e585d;
+                --muted: #1a2629;
+                --accent: var(--p5);
+                --cta: var(--p6);
+                --cta-2: var(--p4)
+            }
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,'Helvetica Neue',Arial;
+            color: var(--ink);
+            background: var(--bg)
+        }
+
+        a {
+            color: var(--ink-2);
+            text-decoration: none
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: var(--bg);
+            border-bottom: 4px solid var(--p3)
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .logo {
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            background: var(--p6);
+            color: #fff;
+            display: grid;
+            place-items: center;
+            font-weight: 800
+        }
+
+        .title {
+            font-weight: 700
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 6px 4px;
+            border-bottom: 2px solid transparent
+        }
+
+            nav a:hover {
+                border-color: var(--p4)
+            }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--cta);
+            background: var(--cta);
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: 600
+        }
+
+            .btn:hover {
+                background: var(--cta-2);
+                border-color: var(--cta-2)
+            }
+
+            .btn.ghost {
+                background: transparent;
+                color: var(--cta);
+                border-color: var(--cta)
+            }
+
+        .lang {
+            border: 1px solid var(--line);
+            background: var(--surface);
+            color: var(--ink);
+            padding: 8px 12px;
+            border-radius: 10px;
+            margin-left: 8px;
+            cursor: pointer
+        }
+
+        /* Mobile header controls */
+        .lang--mobile {
+            display: none
+        }
+
+        .menu-toggle {
+            display: none
+        }
+
+        @media (max-width:900px) {
+            nav {
+                display: none
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+                border: 1px solid var(--line);
+                background: var(--surface);
+                padding: 8px 12px;
+                border-radius: 10px;
+                cursor: pointer
+            }
+
+            .lang--mobile {
+                display: inline-flex
+            }
+
+            #menu {
+                display: none;
+                border-top: 1px solid var(--line)
+            }
+
+                #menu a {
+                    display: block;
+                    padding: 12px 0;
+                    border-bottom: 1px dashed var(--line)
+                }
+
+                #menu .cta {
+                    padding: 16px 0
+                }
+        }
+
+        /* Sections */
+        section {
+            padding: 48px 0
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 0 0 10px;
+            color: var(--ink)
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 0 0 8px;
+            color: var(--ink)
+        }
+
+        p.lead {
+            margin: 0 0 10px;
+            color: var(--ink)
+        }
+
+        .pill {
+            display: inline-block;
+            border: 1px solid var(--line);
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--surface);
+            margin: 6px 6px 0 0
+        }
+            /* pills cycle through palette */
+            .pill:nth-child(1) {
+                background: var(--p2)
+            }
+
+            .pill:nth-child(2) {
+                background: var(--p3)
+            }
+
+            .pill:nth-child(3) {
+                background: var(--p4);
+                color: #fff;
+                border-color: var(--p4)
+            }
+
+            .pill:nth-child(4) {
+                background: var(--p5);
+                color: #fff;
+                border-color: var(--p5)
+            }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 14px
+        }
+
+        @media (max-width:900px) {
+            .grid {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        @media (max-width:620px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            box-shadow: var(--shadow);
+            padding: 16px
+        }
+
+        /* Hero */
+        .hero .card ul {
+            padding-left: 18px
+        }
+
+        /* Services with color accents */
+        #services .card {
+            border-top: 4px solid var(--p5)
+        }
+
+            #services .card:nth-child(2n) {
+                border-top-color: var(--p4)
+            }
+
+            #services .card:nth-child(3n) {
+                border-top-color: var(--p6)
+            }
+
+        /* Process */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 14px
+        }
+
+            .steps .card {
+                border-left: 4px solid var(--p3)
+            }
+
+                .steps .card:nth-child(2) {
+                    border-left-color: var(--p4)
+                }
+
+                .steps .card:nth-child(3) {
+                    border-left-color: var(--p5)
+                }
+
+        .num {
+            display: inline-grid;
+            place-items: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            background: var(--accent);
+            color: #fff;
+            font-weight: 700
+        }
+
+        @media (max-width:900px) {
+            .steps {
+                grid-template-columns: 1fr
+            }
+        }
+
+        /* Fees */
+        #fees .card {
+            background: var(--surface)
+        }
+
+            #fees .card:nth-child(1) {
+                border-color: var(--p3)
+            }
+
+            #fees .card:nth-child(2) {
+                border-color: var(--p4)
+            }
+
+            #fees .card:nth-child(3) {
+                border-color: var(--p5)
+            }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 16px;
+            align-items: start
+        }
+
+        @media (max-width:900px) {
+            .about-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .profile {
+            padding: 0
+        }
+
+        .avatar {
+            width: 100%;
+            aspect-ratio: 1200/1115; /* fits 1200 x 1115 exactly */
+            border-radius: 12px;
+            border: 3px solid var(--p3);
+            object-fit: cover;
+            background: var(--muted);
+        }
+
+        .profile-caption {
+            margin: .6rem 0 0;
+            font-size: 14px;
+            opacity: .85
+        }
+
+        /* Form */
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px
+        }
+
+            form .full {
+                grid-column: 1/-1
+            }
+
+        label {
+            font-size: 14px
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: var(--surface);
+            color: inherit
+        }
+
+        textarea {
+            min-height: 110px
+        }
+
+        /* Footer */
+        footer {
+            padding: 28px 0;
+            border-top: 4px solid var(--p4);
+            background: var(--p7);
+            color: #f2f6f6
+        }
+
+            footer a {
+                color: #e6f2f2
+            }
+
+        .foot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px
+        }
+
+        @media (max-width:900px) {
+            .foot-grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .logo--footer {
+            background: var(--p4)
+        }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container bar">
+            <div class="brand">
+                <div class="logo" aria-hidden="true">M</div>
                 <div>
-                    <p data-i18n="about_p1">I offer a calm, humane experience for everyday legal documents.</p>
+                    <div class="title" data-i18n="brand">Mónica Carreón Díez</div>
+                    <div style="opacity:.85;font-size:13px" data-i18n="brand_sub">Paralegal • Notary & Commissioner — Toronto</div>
+                </div>
+            </div>
+            <nav aria-label="Primary">
+                <a href="#services" data-i18n="nav_services">Services</a>
+                <a href="#process" data-i18n="nav_process">How it works</a>
+                <a href="#fees" data-i18n="nav_fees">Fees</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#faq" data-i18n="nav_faq">FAQ</a>
+                <a href="#contact" class="btn" data-i18n="nav_book">Book</a>
+                <button class="lang" id="langBtn" aria-label="Switch language">ES</button>
+            </nav>
+            <!-- Mobile controls -->
+            <div>
+                <button class="lang lang--mobile" id="langBtnMobile" aria-label="Switch language">ES</button>
+                <button class="menu-toggle" aria-expanded="false" aria-controls="menu" id="menuBtn">Menu ▾</button>
+            </div>
+        </div>
+        <div id="menu" class="container">
+            <a href="#services" data-i18n="nav_services">Services</a>
+            <a href="#process" data-i18n="nav_process">How it works</a>
+            <a href="#fees" data-i18n="nav_fees">Fees</a>
+            <a href="#about" data-i18n="nav_about">About</a>
+            <a href="#faq" data-i18n="nav_faq">FAQ</a>
+            <div class="cta"><a href="#contact" class="btn" data-i18n="nav_book">Book</a></div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <h1 data-i18n="hero_h1">Notarization made easy.</h1>
+                <p class="lead" data-i18n="hero_p">Fast, friendly, and clear. Toronto & the GTA.</p>
+                <p>
+                    <span class="pill" data-i18n="pill1">Same-day</span>
+                    <span class="pill" data-i18n="pill2">Mobile</span>
+                    <span class="pill" data-i18n="pill3">Evenings</span>
+                </p>
+                <p>
+                    <a class="btn" href="#contact" data-i18n="hero_cta1">Book now</a>
+                    <a class="btn ghost" href="#services" data-i18n="hero_cta2">View services</a>
+                </p>
+                <div class="card" aria-label="Key info">
                     <ul>
-                        <li data-i18n="about_b1">Kind support for sensitive situations</li>
-                        <li data-i18n="about_b2">Clear checklists so you bring what’s needed</li>
-                        <li data-i18n="about_b3">Flexible scheduling within the GTA</li>
+                        <li data-i18n="info_common">Common docs: affidavits, declarations, certified copies, travel consent, invitations, OSAP/education, real-estate & business.</li>
+                        <li data-i18n="info_bring">Bring: government photo ID and unsigned documents.</li>
+                        <li data-i18n="info_time">Time: usually 10–20 minutes.</li>
+                        <li data-i18n="info_area">Area: Toronto + mobile GTA.</li>
                     </ul>
                 </div>
-                <img class="avatar" src="profile.jpg" alt="Portrait of Mónica Carreón Díez" loading="lazy" />
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services">
+            <div class="container">
+                <h2 data-i18n="svc_h2">Services</h2>
+                <div class="grid">
+                    <div class="card"><strong data-i18n="svc1_t">Affidavits & Statutory Declarations</strong><p data-i18n="svc1_d">Sworn/affirmed statements for government, school, court, or work.</p></div>
+                    <div class="card"><strong data-i18n="svc2_t">Certified True Copies</strong><p data-i18n="svc2_d">We confirm a copy matches the original (passports, IDs, transcripts).</p></div>
+                    <div class="card"><strong data-i18n="svc3_t">Travel Consent Letters</strong><p data-i18n="svc3_d">For children traveling without one or both parents/guardians.</p></div>
+                    <div class="card"><strong data-i18n="svc4_t">Invitation Letters</strong><p data-i18n="svc4_d">Notarized invitations for visa/immigration files.</p></div>
+                    <div class="card"><strong data-i18n="svc5_t">Commissioner of Oaths</strong><p data-i18n="svc5_d">We witness oaths/affirmations where a commissioner is required.</p></div>
+                    <div class="card"><strong data-i18n="svc6_t">Education & OSAP</strong><p data-i18n="svc6_d">Forms for admissions and financial aid.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process">
+            <div class="container">
+                <h2 data-i18n="proc_h2">How it works</h2>
+                <div class="steps">
+                    <div class="card"><span class="num">1</span> <strong data-i18n="proc1_t">Prepare</strong><p data-i18n="proc1_d">Bring ID and unsigned documents.</p></div>
+                    <div class="card"><span class="num">2</span> <strong data-i18n="proc2_t">Book</strong><p data-i18n="proc2_d">Request a time — same-day, mobile, or evening.</p></div>
+                    <div class="card"><span class="num">3</span> <strong data-i18n="proc3_t">Meet</strong><p data-i18n="proc3_d">We verify, answer questions, and seal.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEES -->
+        <section id="fees">
+            <div class="container">
+                <h2 data-i18n="fees_h2">Fees</h2>
+                <div class="grid">
+                    <div class="card"><strong data-i18n="fees1_t">Single document</strong><p data-i18n="fees1_d">Includes one seal and ID check.</p></div>
+                    <div class="card"><strong data-i18n="fees2_t">Multiple documents</strong><p data-i18n="fees2_d">Bundled pricing for extra seals/copies.</p></div>
+                    <div class="card"><strong data-i18n="fees3_t">Mobile / after-hours</strong><p data-i18n="fees3_d">Quoted by distance and time.</p></div>
+                </div>
+                <p style="font-size:13px;opacity:.85" data-i18n="fees_note">You’ll receive a firm quote before we proceed. Paralegal services are regulated in Ontario. This is general info, not legal advice.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <h2 data-i18n="about_h2">About</h2>
+                <div class="about-grid">
+                    <div>
+                        <p data-i18n="about_p1">I offer a calm, humane experience for everyday legal documents.</p>
+                        <ul>
+                            <li data-i18n="about_b1">Kind support for sensitive situations</li>
+                            <li data-i18n="about_b2">Clear checklists so you bring what’s needed</li>
+                            <li data-i18n="about_b3">Flexible scheduling within the GTA</li>
+                        </ul>
+                    </div>
+                    <img class="avatar" src="portrait.jpg" alt="Portrait of Mónica Carreón Díez" loading="lazy" />
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq">
+            <div class="container">
+                <h2 data-i18n="faq_h2">FAQ</h2>
+                <details><summary data-i18n="faq1_q">What should I bring?</summary><p data-i18n="faq1_a">Government photo ID and the unsigned documents.</p></details>
+                <details><summary data-i18n="faq2_q">Can you certify a copy of my ID?</summary><p data-i18n="faq2_a">Yes — bring the original to compare with the copy.</p></details>
+                <details><summary data-i18n="faq3_q">Do you offer mobile or evenings?</summary><p data-i18n="faq3_a">Yes, when scheduling allows. Fees quoted in advance.</p></details>
+                <details><summary data-i18n="faq4_q">Is this legal advice?</summary><p data-i18n="faq4_a">No. Notarization/commissioning confirms identity, signatures, or copies.</p></details>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="container">
+                <h2 data-i18n="contact_h2">Book a notarization</h2>
+                <p class="lead" data-i18n="contact_p">Tell us what you need and your preferred time.</p>
+                <form id="contactForm" novalidate>
+                    <div>
+                        <label for="name" data-i18n="f_name_l">Full name</label>
+                        <input id="name" name="name" autocomplete="name" required placeholder="Jane Doe" />
+                    </div>
+                    <div>
+                        <label for="email" data-i18n="f_email_l">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+                    </div>
+                    <div>
+                        <label for="phone" data-i18n="f_phone_l">Phone (optional)</label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(647) 555-0123" />
+                    </div>
+                    <div>
+                        <label for="service" data-i18n="f_service_l">Service</label>
+                        <select id="service" name="service" required></select>
+                    </div>
+                    <div class="full">
+                        <label for="msg" data-i18n="f_msg_l">Details</label>
+                        <textarea id="msg" name="message" data-i18n-placeholder="f_msg_ph" placeholder="Document name, number of copies, preferred time…" required></textarea>
+                    </div>
+                    <div class="full">
+                        <button class="btn" type="submit" data-i18n="f_submit">Request</button>
+                        <span id="status" class="status" role="status" aria-live="polite"></span>
+                    </div>
+                    <p class="full" style="font-size:13px;opacity:.85" data-i18n="privacy">We respect your privacy and do not share your information.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container foot-grid">
+            <div>
+                <div class="brand" style="margin-bottom:8px">
+                    <div class="logo logo--footer" aria-hidden="true">M</div>
+                    <div>
+                        <div class="title" data-i18n="brand">Mónica Carreón Díez</div>
+                        <div style="opacity:.9;font-size:13px" data-i18n="brand_sub">Paralegal • Notary & Commissioner — Toronto</div>
+                    </div>
+                </div>
+                <p style="margin:8px 0"><a href="mailto:monica@carreondiez.com">monica@carreondiez.com</a> • <a href="tel:+14168936565">(416) 893-6565</a></p>
+                <p style="font-size:12px;opacity:.9;margin-top:8px">© <span id="year"></span> <span data-i18n="brand">Mónica Carreón Díez</span>. <span data-i18n="disclaimer">General info only — not legal advice.</span></p>
+            </div>
+            <div>
+                <h4 style="margin:0 0 8px" data-i18n="links_h4">Links</h4>
+                <ul style="list-style:none;margin:0;padding:0;display:grid;gap:8px">
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#fees" data-i18n="nav_fees">Fees</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="https://maps.google.com/?q=Toronto+ON" target="_blank" rel="noopener" data-i18n="link_maps">Find us on Google Maps</a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- FAQ -->
-    <section id="faq">
-        <div class="container">
-            <h2 data-i18n="faq_h2">FAQ</h2>
-            <details><summary data-i18n="faq1_q">What should I bring?</summary><p data-i18n="faq1_a">Government photo ID and the unsigned documents.</p></details>
-            <details><summary data-i18n="faq2_q">Can you certify a copy of my ID?</summary><p data-i18n="faq2_a">Yes — bring the original to compare with the copy.</p></details>
-            <details><summary data-i18n="faq3_q">Do you offer mobile or evenings?</summary><p data-i18n="faq3_a">Yes, when scheduling allows. Fees quoted in advance.</p></details>
-            <details><summary data-i18n="faq4_q">Is this legal advice?</summary><p data-i18n="faq4_a">No. Notarization/commissioning confirms identity, signatures, or copies.</p></details>
-        </div>
-    </section>
+    <script>
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+        menuBtn?.addEventListener('click', () => {
+            const open = menu.style.display === 'block';
+            menu.style.display = open ? 'none' : 'block';
+            menuBtn.setAttribute('aria-expanded', String(!open));
+        });
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container">
-            <h2 data-i18n="contact_h2">Book a notarization</h2>
-            <p class="lead" data-i18n="contact_p">Tell us what you need and your preferred time.</p>
-            <form id="contactForm" novalidate>
-                <div>
-                    <label for="name" data-i18n="f_name_l">Full name</label>
-                    <input id="name" name="name" autocomplete="name" required placeholder="Jane Doe" />
-                </div>
-                <div>
-                    <label for="email" data-i18n="f_email_l">Email</label>
-                    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
-                </div>
-                <div>
-                    <label for="phone" data-i18n="f_phone_l">Phone (optional)</label>
-                    <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(647) 555‑0123" />
-                </div>
-                <div>
-                    <label for="service" data-i18n="f_service_l">Service</label>
-                    <select id="service" name="service" required></select>
-                </div>
-                <div class="full">
-                    <label for="msg" data-i18n="f_msg_l">Details</label>
-                    <textarea id="msg" name="message" data-i18n-placeholder="f_msg_ph" placeholder="Document name, number of copies, preferred time…" required></textarea>
-                </div>
-                <div class="full">
-                    <button class="btn" type="submit" data-i18n="f_submit">Request</button>
-                    <span id="status" class="status" role="status" aria-live="polite"></span>
-                </div>
-                <p class="full" style="font-size:13px;opacity:.85" data-i18n="privacy">We respect your privacy and do not share your information.</p>
-            </form>
-        </div>
-    </section>
-</main>
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-<footer>
-  <div class="container foot-grid">
-    <div>
-      <div class="brand" style="margin-bottom:8px">
-        <div class="logo logo--footer" aria-hidden="true">M</div>
-        <div>
-          <div class="title" data-i18n="brand">Mónica Carreón Díez</div>
-          <div style="opacity:.9;font-size:13px" data-i18n="brand_sub">Paralegal • Notary & Commissioner — Toronto</div>
-        </div>
-      </div>
-      <p style="margin:8px 0"><a href="mailto:monica@carreondiez.com">monica@carreondiez.com</a> • <a href="tel:+14168936565">(416) 893-6565</a></p>
-      <p style="font-size:12px;opacity:.9;margin-top:8px">© <span id="year"></span> <span data-i18n="brand">Mónica Carreón Díez</span>. <span data-i18n="disclaimer">General info only — not legal advice.</span></p>
-    </div>
-    <div>
-      <h4 style="margin:0 0 8px" data-i18n="links_h4">Links</h4>
-      <ul style="list-style:none;margin:0;padding:0;display:grid;gap:8px">
-        <li><a href="#services" data-i18n="nav_services">Services</a></li>
-        <li><a href="#fees" data-i18n="nav_fees">Fees</a></li>
-        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
-        <li><a href="https://maps.google.com/?q=Toronto+ON" target="_blank" rel="noopener" data-i18n="link_maps">Find us on Google Maps</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+        // i18n strings
+        const i18n = {
+            en: {
+                title: 'Mónica Carreón Díez | Paralegal & Notary in Toronto',
+                meta_desc: 'Fast, friendly notarization and paralegal services in Toronto & the GTA.',
+                brand: 'Mónica Carreón Díez',
+                brand_sub: 'Paralegal • Notary & Commissioner — Toronto',
+                nav_services: 'Services', nav_process: 'How it works', nav_fees: 'Fees', nav_about: 'About', nav_faq: 'FAQ', nav_book: 'Book',
+                hero_h1: 'Notarization made easy.', hero_p: 'Fast, friendly, and clear. Toronto & the GTA.',
+                pill1: 'Same-day', pill2: 'Mobile', pill3: 'Evenings',
+                hero_cta1: 'Book now', hero_cta2: 'View services',
+                info_common: 'Common docs: affidavits, declarations, certified copies, travel consent, invitations, OSAP/education, real-estate & business.',
+                info_bring: 'Bring: government photo ID and unsigned documents.',
+                info_time: 'Time: usually 10–20 minutes.',
+                info_area: 'Area: Toronto + mobile GTA.',
+                svc_h2: 'Services',
+                svc1_t: 'Affidavits & Statutory Declarations', svc1_d: 'Sworn/affirmed statements for government, school, court, or work.',
+                svc2_t: 'Certified True Copies', svc2_d: 'We confirm a copy matches the original (passports, IDs, transcripts).',
+                svc3_t: 'Travel Consent Letters', svc3_d: 'For children traveling without one or both parents/guardians.',
+                svc4_t: 'Invitation Letters', svc4_d: 'Notarized invitations for visa/immigration files.',
+                svc5_t: 'Commissioner of Oaths', svc5_d: 'We witness oaths/affirmations where a commissioner is required.',
+                svc6_t: 'Education & OSAP', svc6_d: 'Forms for admissions and financial aid.',
+                proc_h2: 'How it works',
+                proc1_t: 'Prepare', proc1_d: 'Bring ID and unsigned documents.',
+                proc2_t: 'Book', proc2_d: 'Request a time — same-day, mobile, or evening.',
+                proc3_t: 'Meet', proc3_d: 'We verify, answer questions, and seal.',
+                fees_h2: 'Fees',
+                fees1_t: 'Single document', fees1_d: 'Includes one seal and ID check.',
+                fees2_t: 'Multiple documents', fees2_d: 'Bundled pricing for extra seals/copies.',
+                fees3_t: 'Mobile / after-hours', fees3_d: 'Quoted by distance and time.',
+                fees_note: 'You’ll receive a firm quote before we proceed. Paralegal services are regulated in Ontario. This is general info, not legal advice.',
+                about_h2: 'About',
+                about_p1: 'I offer a calm, humane experience for everyday legal documents.',
+                about_b1: 'Kind support for sensitive situations',
+                about_b2: 'Clear checklists so you bring what’s needed',
+                about_b3: 'Flexible scheduling within the GTA',
+                about_loc: 'Toronto, Ontario • Serving the GTA',
+                faq_h2: 'FAQ',
+                faq1_q: 'What should I bring?', faq1_a: 'Government photo ID and the unsigned documents.',
+                faq2_q: 'Can you certify a copy of my ID?', faq2_a: 'Yes — bring the original to compare with the copy.',
+                faq3_q: 'Do you offer mobile or evenings?', faq3_a: 'Yes, when scheduling allows. Fees quoted in advance.',
+                faq4_q: 'Is this legal advice?', faq4_a: 'No. Notarization/commissioning confirms identity, signatures, or copies.',
+                contact_h2: 'Book a notarization', contact_p: 'Tell us what you need and your preferred time.',
+                f_name_l: 'Full name', f_email_l: 'Email', f_phone_l: 'Phone (optional)', f_service_l: 'Service', f_msg_l: 'Details', f_msg_ph: 'Document name, number of copies, preferred time…', f_submit: 'Request',
+                privacy: 'We respect your privacy and do not share your information.',
+                links_h4: 'Links', link_maps: 'Find us on Google Maps', disclaimer: 'General info only — not legal advice.'
+            },
+            es: {
+                title: 'Mónica Carreón Díez | Paralegal y Notaria en Toronto',
+                meta_desc: 'Servicios de notarización y apoyo paralegal rápidos y amables en Toronto y el GTA.',
+                brand: 'Mónica Carreón Díez',
+                brand_sub: 'Paralegal • Notaria y Comisionada — Toronto',
+                nav_services: 'Servicios', nav_process: 'Proceso', nav_fees: 'Honorarios', nav_about: 'Acerca de', nav_faq: 'Preguntas', nav_book: 'Reservar',
+                hero_h1: 'Notarización sin complicaciones.', hero_p: 'Rápida, amable y clara. Toronto y GTA.',
+                pill1: 'Mismo día', pill2: 'A domicilio', pill3: 'Noches',
+                hero_cta1: 'Reservar', hero_cta2: 'Ver servicios',
+                info_common: 'Documentos comunes: affidávits, declaraciones, copias certificadas, cartas de viaje, cartas de invitación, formularios de estudios/OSAP, bienes raíces y negocios.',
+                info_bring: 'Trae: identificación oficial con foto y documentos sin firmar.',
+                info_time: 'Tiempo: normalmente 10–20 minutos.',
+                info_area: 'Zona: Toronto + servicio móvil en GTA.',
+                svc_h2: 'Servicios',
+                svc1_t: 'Affidávits y Declaraciones Juradas', svc1_d: 'Declaraciones bajo juramento para gobierno, escuela, tribunal o trabajo.',
+                svc2_t: 'Copias Certificadas', svc2_d: 'Confirmamos que la copia coincide con el original (pasaportes, IDs, certificados).',
+                svc3_t: 'Cartas de Consentimiento de Viaje', svc3_d: 'Para menores que viajan sin uno o ambos padres/tutores.',
+                svc4_t: 'Cartas de Invitación', svc4_d: 'Invitaciones notarizadas para trámites de visa/migración.',
+                svc5_t: 'Comisionada de Juramentos', svc5_d: 'Tomamos juramentos/afirmaciones donde se requiere comisionada.',
+                svc6_t: 'Formularios Educativos y OSAP', svc6_d: 'Documentos para admisiones y ayuda financiera.',
+                proc_h2: 'Proceso',
+                proc1_t: 'Prepara', proc1_d: 'Trae tu ID y documentos sin firmar.',
+                proc2_t: 'Agenda', proc2_d: 'Pide hora — mismo día, a domicilio o noche.',
+                proc3_t: 'Reunión', proc3_d: 'Verificamos, resolvemos dudas y sellamos.',
+                fees_h2: 'Honorarios',
+                fees1_t: 'Documento único', fees1_d: 'Incluye un sello y verificación de identidad.',
+                fees2_t: 'Varios documentos', fees2_d: 'Precio conjunto para sellos/copias adicionales.',
+                fees3_t: 'Móvil / fuera de horario', fees3_d: 'Se cotiza por distancia y tiempo.',
+                fees_note: 'Recibirás una cotización firme antes de comenzar. Servicios paralegales regulados en Ontario. Información general; no es asesoría legal.',
+                about_h2: 'Acerca de',
+                about_p1: 'Brindo una experiencia humana y tranquila para documentos cotidianos.',
+                about_b1: 'Acompañamiento amable en situaciones sensibles',
+                about_b2: 'Listas claras para traer lo necesario',
+                about_b3: 'Horarios flexibles en el GTA',
+                about_loc: 'Toronto, Ontario • Servicio en GTA',
+                faq_h2: 'Preguntas',
+                faq1_q: '¿Qué debo llevar?', faq1_a: 'Identificación oficial con foto y documentos sin firmar.',
+                faq2_q: '¿Pueden certificar una copia de mi ID?', faq2_a: 'Sí — trae el original para compararlo.',
+                faq3_q: '¿Ofrecen servicio móvil o por la noche?', faq3_a: 'Sí, según la agenda. Tarifas cotizadas por adelantado.',
+                faq4_q: '¿Es asesoría legal?', faq4_a: 'No. La notarización/commission solo confirma identidad, firmas o copias.',
+                contact_h2: 'Reserva una notarización', contact_p: 'Cuéntanos qué necesitas y tu horario preferido.',
+                f_name_l: 'Nombre completo', f_email_l: 'Correo electrónico', f_phone_l: 'Teléfono (opcional)', f_service_l: 'Servicio', f_msg_l: 'Detalles', f_msg_ph: 'Nombre del documento, número de copias, horario preferido…', f_submit: 'Enviar',
+                privacy: 'Respetamos tu privacidad y no compartimos tu información.',
+                links_h4: 'Enlaces', link_maps: 'Encuéntranos en Google Maps', disclaimer: 'Información general — no es asesoría legal.'
+            }
+        };
 
-<script>
-  // Mobile menu
-  const menuBtn = document.getElementById('menuBtn');
-  const menu = document.getElementById('menu');
-  menuBtn?.addEventListener('click', () => {
-    const open = menu.style.display === 'block';
-    menu.style.display = open ? 'none' : 'block';
-    menuBtn.setAttribute('aria-expanded', String(!open));
-  });
+        const serviceOptions = {
+            en: [
+                'Affidavit / Statutory Declaration',
+                'Certified True Copies',
+                'Travel Consent Letter',
+                'Invitation Letter',
+                'Commissioner of Oaths',
+                'Education / OSAP',
+                'Other / Not sure'
+            ],
+            es: [
+                'Affidávit / Declaración Jurada',
+                'Copias Certificadas',
+                'Carta de Consentimiento de Viaje',
+                'Carta de Invitación',
+                'Comisionada de Juramentos',
+                'Educación / OSAP',
+                'Otro / No estoy seguro(a)'
+            ]
+        };
 
-  // Year
-  document.getElementById('year').textContent = new Date().getFullYear();
+        function setLang(lang) {
+            document.documentElement.setAttribute('lang', lang === 'es' ? 'es' : 'en');
+            // text nodes
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang][key] !== undefined) {
+                    el.textContent = i18n[lang][key];
+                }
+            });
+            // title + meta
+            document.title = i18n[lang].title;
+            const md = document.querySelector('meta[name="description"]');
+            if (md) md.setAttribute('content', i18n[lang].meta_desc);
+            // placeholder
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (i18n[lang][key] !== undefined) { el.setAttribute('placeholder', i18n[lang][key]); }
+            });
+            // select options
+            const sel = document.getElementById('service');
+            if (sel) {
+                const current = sel.value;
+                sel.innerHTML = '<option value="">' + (lang === 'es' ? 'Elige…' : 'Choose…') + '</option>' +
+                    serviceOptions[lang].map(o => `<option>${o}</option>`).join('');
+                const has = Array.from(sel.options).some(opt => opt.text === current);
+                if (has) sel.value = current;
+            }
+            // update both desktop & mobile language buttons
+            const langBtn = document.getElementById('langBtn');
+            const langBtnMobile = document.getElementById('langBtnMobile');
+            if (langBtn) langBtn.textContent = lang === 'es' ? 'EN' : 'ES';
+            if (langBtnMobile) langBtnMobile.textContent = lang === 'es' ? 'EN' : 'ES';
 
-  // i18n strings
-  const i18n = {
-    en: {
-      title: 'Mónica Carreón Díez | Paralegal & Notary in Toronto',
-      meta_desc: 'Fast, friendly notarization and paralegal services in Toronto & the GTA.',
-      brand: 'Mónica Carreón Díez',
-      brand_sub: 'Paralegal • Notary & Commissioner — Toronto',
-      nav_services: 'Services', nav_process:'How it works', nav_fees:'Fees', nav_about:'About', nav_faq:'FAQ', nav_book:'Book',
-      hero_h1:'Notarization made easy.', hero_p:'Fast, friendly, and clear. Toronto & the GTA.',
-      pill1:'Same‑day', pill2:'Mobile', pill3:'Evenings',
-      hero_cta1:'Book now', hero_cta2:'View services',
-      info_common:'Common docs: affidavits, declarations, certified copies, travel consent, invitations, OSAP/education, real‑estate & business.',
-      info_bring:'Bring: government photo ID and unsigned documents.',
-      info_time:'Time: usually 10–20 minutes.',
-      info_area:'Area: Toronto + mobile GTA.',
-      svc_h2:'Services',
-      svc1_t:'Affidavits & Statutory Declarations', svc1_d:'Sworn/affirmed statements for government, school, court, or work.',
-      svc2_t:'Certified True Copies', svc2_d:'We confirm a copy matches the original (passports, IDs, transcripts).',
-      svc3_t:'Travel Consent Letters', svc3_d:'For children traveling without one or both parents/guardians.',
-      svc4_t:'Invitation Letters', svc4_d:'Notarized invitations for visa/immigration files.',
-      svc5_t:'Commissioner of Oaths', svc5_d:'We witness oaths/affirmations where a commissioner is required.',
-      svc6_t:'Education & OSAP', svc6_d:'Forms for admissions and financial aid.',
-      proc_h2:'How it works',
-      proc1_t:'Prepare', proc1_d:'Bring ID and unsigned documents.',
-      proc2_t:'Book', proc2_d:'Request a time — same‑day, mobile, or evening.',
-      proc3_t:'Meet', proc3_d:'We verify, answer questions, and seal.',
-      fees_h2:'Fees',
-      fees1_t:'Single document', fees1_d:'Includes one seal and ID check.',
-      fees2_t:'Multiple documents', fees2_d:'Bundled pricing for extra seals/copies.',
-      fees3_t:'Mobile / after‑hours', fees3_d:'Quoted by distance and time.',
-      fees_note:'You’ll receive a firm quote before we proceed. Paralegal services are regulated in Ontario. This is general info, not legal advice.',
-      about_h2:'About',
-      about_p1:'I offer a calm, humane experience for everyday legal documents.',
-      about_b1:'Kind support for sensitive situations',
-      about_b2:'Clear checklists so you bring what’s needed',
-      about_b3:'Flexible scheduling within the GTA',
-      about_loc:'Toronto, Ontario • Serving the GTA',
-      faq_h2:'FAQ',
-      faq1_q:'What should I bring?', faq1_a:'Government photo ID and the unsigned documents.',
-      faq2_q:'Can you certify a copy of my ID?', faq2_a:'Yes — bring the original to compare with the copy.',
-      faq3_q:'Do you offer mobile or evenings?', faq3_a:'Yes, when scheduling allows. Fees quoted in advance.',
-      faq4_q:'Is this legal advice?', faq4_a:'No. Notarization/commissioning confirms identity, signatures, or copies.',
-      contact_h2:'Book a notarization', contact_p:'Tell us what you need and your preferred time.',
-      f_name_l:'Full name', f_email_l:'Email', f_phone_l:'Phone (optional)', f_service_l:'Service', f_msg_l:'Details', f_msg_ph:'Document name, number of copies, preferred time…', f_submit:'Request',
-      privacy:'We respect your privacy and do not share your information.',
-      links_h4:'Links', link_maps:'Find us on Google Maps', disclaimer:'General info only — not legal advice.'
-    },
-    es: {
-      title: 'Mónica Carreón Díez | Paralegal y Notaria en Toronto',
-      meta_desc: 'Servicios de notarización y apoyo paralegal rápidos y amables en Toronto y el GTA.',
-      brand: 'Mónica Carreón Díez',
-      brand_sub: 'Paralegal • Notaria y Comisionada — Toronto',
-      nav_services:'Servicios', nav_process:'Proceso', nav_fees:'Honorarios', nav_about:'Acerca de', nav_faq:'Preguntas', nav_book:'Reservar',
-      hero_h1:'Notarización sin complicaciones.', hero_p:'Rápida, amable y clara. Toronto y GTA.',
-      pill1:'Mismo día', pill2:'A domicilio', pill3:'Noches',
-      hero_cta1:'Reservar', hero_cta2:'Ver servicios',
-      info_common:'Documentos comunes: affidávits, declaraciones, copias certificadas, cartas de viaje, cartas de invitación, formularios de estudios/OSAP, bienes raíces y negocios.',
-      info_bring:'Trae: identificación oficial con foto y documentos sin firmar.',
-      info_time:'Tiempo: normalmente 10–20 minutos.',
-      info_area:'Zona: Toronto + servicio móvil en GTA.',
-      svc_h2:'Servicios',
-      svc1_t:'Affidávits y Declaraciones Juradas', svc1_d:'Declaraciones bajo juramento para gobierno, escuela, tribunal o trabajo.',
-      svc2_t:'Copias Certificadas', svc2_d:'Confirmamos que la copia coincide con el original (pasaportes, IDs, certificados).',
-      svc3_t:'Cartas de Consentimiento de Viaje', svc3_d:'Para menores que viajan sin uno o ambos padres/tutores.',
-      svc4_t:'Cartas de Invitación', svc4_d:'Invitaciones notarizadas para trámites de visa/migración.',
-      svc5_t:'Comisionada de Juramentos', svc5_d:'Tomamos juramentos/afirmaciones donde se requiere comisionada.',
-      svc6_t:'Formularios Educativos y OSAP', svc6_d:'Documentos para admisiones y ayuda financiera.',
-      proc_h2:'Proceso',
-      proc1_t:'Prepara', proc1_d:'Trae tu ID y documentos sin firmar.',
-      proc2_t:'Agenda', proc2_d:'Pide hora — mismo día, a domicilio o noche.',
-      proc3_t:'Reunión', proc3_d:'Verificamos, resolvemos dudas y sellamos.',
-      fees_h2:'Honorarios',
-      fees1_t:'Documento único', fees1_d:'Incluye un sello y verificación de identidad.',
-      fees2_t:'Varios documentos', fees2_d:'Precio conjunto para sellos/copias adicionales.',
-      fees3_t:'Móvil / fuera de horario', fees3_d:'Se cotiza por distancia y tiempo.',
-      fees_note:'Recibirás una cotización firme antes de comenzar. Servicios paralegales regulados en Ontario. Información general; no es asesoría legal.',
-      about_h2:'Acerca de',
-      about_p1:'Brindo una experiencia humana y tranquila para documentos cotidianos.',
-      about_b1:'Acompañamiento amable en situaciones sensibles',
-      about_b2:'Listas claras para traer lo necesario',
-      about_b3:'Horarios flexibles en el GTA',
-      about_loc:'Toronto, Ontario • Servicio en GTA',
-      faq_h2:'Preguntas',
-      faq1_q:'¿Qué debo llevar?', faq1_a:'Identificación oficial con foto y documentos sin firmar.',
-      faq2_q:'¿Pueden certificar una copia de mi ID?', faq2_a:'Sí — trae el original para compararlo.',
-      faq3_q:'¿Ofrecen servicio móvil o por la noche?', faq3_a:'Sí, según la agenda. Tarifas cotizadas por adelantado.',
-      faq4_q:'¿Es asesoría legal?', faq4_a:'No. La notarización/commission solo confirma identidad, firmas o copias.',
-      contact_h2:'Reserva una notarización', contact_p:'Cuéntanos qué necesitas y tu horario preferido.',
-      f_name_l:'Nombre completo', f_email_l:'Correo electrónico', f_phone_l:'Teléfono (opcional)', f_service_l:'Servicio', f_msg_l:'Detalles', f_msg_ph:'Nombre del documento, número de copias, horario preferido…', f_submit:'Enviar',
-      privacy:'Respetamos tu privacidad y no compartimos tu información.',
-      links_h4:'Enlaces', link_maps:'Encuéntranos en Google Maps', disclaimer:'Información general — no es asesoría legal.'
-    }
-  };
+            localStorage.setItem('lang', lang);
+        }
 
-  const serviceOptions = {
-    en: [
-      'Affidavit / Statutory Declaration',
-      'Certified True Copies',
-      'Travel Consent Letter',
-      'Invitation Letter',
-      'Commissioner of Oaths',
-      'Education / OSAP',
-      'Other / Not sure'
-    ],
-    es: [
-      'Affidávit / Declaración Jurada',
-      'Copias Certificadas',
-      'Carta de Consentimiento de Viaje',
-      'Carta de Invitación',
-      'Comisionada de Juramentos',
-      'Educación / OSAP',
-      'Otro / No estoy seguro(a)'
-    ]
-  };
+        // Init lang
+        const saved = localStorage.getItem('lang') || (navigator.language || 'en').slice(0, 2);
+        setLang(saved === 'es' ? 'es' : 'en');
 
-  function setLang(lang){
-    document.documentElement.setAttribute('lang', lang === 'es' ? 'es' : 'en');
-    // text nodes
-    document.querySelectorAll('[data-i18n]').forEach(el=>{
-      const key = el.getAttribute('data-i18n');
-      if(i18n[lang][key] !== undefined){
-        el.textContent = i18n[lang][key];
-      }
-    });
-    // title + meta
-    document.title = i18n[lang].title;
-    const md = document.querySelector('meta[name="description"]');
-    if(md) md.setAttribute('content', i18n[lang].meta_desc);
-    // placeholder
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
-      const key = el.getAttribute('data-i18n-placeholder');
-      if(i18n[lang][key] !== undefined){ el.setAttribute('placeholder', i18n[lang][key]); }
-    });
-    // select options
-    const sel = document.getElementById('service');
-    if(sel){
-      const current = sel.value;
-      sel.innerHTML = '<option value="">'+(lang==='es'?'Elige…':'Choose…')+'</option>' +
-        serviceOptions[lang].map(o=>`<option>${o}</option>`).join('');
-      // try to preserve value if it exists in new list
-      const has = Array.from(sel.options).some(opt=>opt.text===current);
-      if(has) sel.value = current;
-    }
-    // buttons
-    const langBtn = document.getElementById('langBtn');
-    if(langBtn) langBtn.textContent = lang==='es'?'EN':'ES';
-    localStorage.setItem('lang', lang);
-  }
+        // Toggle buttons (desktop + mobile)
+        document.getElementById('langBtn')?.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('lang') === 'es' ? 'en' : 'es';
+            setLang(next);
+        });
+        document.getElementById('langBtnMobile')?.addEventListener('click', () => {
+            const next = document.documentElement.getAttribute('lang') === 'es' ? 'en' : 'es';
+            setLang(next);
+        });
 
-  // Init lang
-  const saved = localStorage.getItem('lang') || (navigator.language||'en').slice(0,2);
-  setLang(saved==='es'?'es':'en');
-
-  // Toggle button
-  document.getElementById('langBtn')?.addEventListener('click',()=>{
-    const next = document.documentElement.getAttribute('lang')==='es'?'en':'es';
-    setLang(next);
-  });
-
-  // Simple mailto form handler (replace MAIL_TO if needed)
-  const form = document.getElementById('contactForm');
-  const statusEl = document.getElementById('status');
-  form?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const fd = new FormData(form);
-    const data = Object.fromEntries(fd.entries());
-    if(!data.name || !data.email || !data.service || !data.message){
-      statusEl.textContent = document.documentElement.lang==='es' ? 'Completa los campos requeridos.' : 'Please fill required fields.';
-      statusEl.style.color = '#b91c1c';
-      return;
-    }
-    const subject = encodeURIComponent((document.documentElement.lang==='es'?'Solicitud de notarización — ':'Notarization request — ')+ data.service);
-    const body = encodeURIComponent(`Name/Nombre: ${data.name}
+        // Simple mailto form handler (replace MAIL_TO if needed)
+        const form = document.getElementById('contactForm');
+        const statusEl = document.getElementById('status');
+        form?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const fd = new FormData(form);
+            const data = Object.fromEntries(fd.entries());
+            if (!data.name || !data.email || !data.service || !data.message) {
+                statusEl.textContent = document.documentElement.lang === 'es' ? 'Completa los campos requeridos.' : 'Please fill required fields.';
+                statusEl.style.color = '#b91c1c';
+                return;
+            }
+            const subject = encodeURIComponent((document.documentElement.lang === 'es' ? 'Solicitud de notarización — ' : 'Notarization request — ') + data.service);
+            const body = encodeURIComponent(`Name/Nombre: ${data.name}
 Email: ${data.email}
-Phone/Teléfono: ${data.phone||'-'}
+Phone/Teléfono: ${data.phone || '-'}
 Service/Servicio: ${data.service}
 
 Details/Detalles:
 ${data.message}`);
-    const MAIL_TO = 'monica@carreondiez.com';
-    window.location.href = `mailto:${MAIL_TO}?subject=${subject}&body=${body}`;
-    statusEl.textContent = document.documentElement.lang==='es' ? 'Abriendo tu correo… Si no se abre, escribe a monica@carreondiez.com.' : 'Opening your email app... If nothing opens, email monica@carreondiez.com.';
-    statusEl.style.color = '#15803d';
-    form.reset();
-  });
-</script>
+            const MAIL_TO = 'monica@carreondiez.com';
+            window.location.href = `mailto:${MAIL_TO}?subject=${subject}&body=${body}`;
+            statusEl.textContent = document.documentElement.lang === 'es' ? 'Abriendo tu correo… Si no se abre, escribe a monica@carreondiez.com.' : 'Opening your email app... If nothing opens, email monica@carreondiez.com.';
+            statusEl.style.color = '#15803d';
+            form.reset();
+        });
+    </script>
 </body>
 </html>
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
