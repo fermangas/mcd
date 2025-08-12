@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Test Page</title>
+  <style>body{font:16px system-ui;margin:2rem} button{padding:.5rem 1rem}</style>
+</head>
+<body>
+  <h1 id="msg">It works 🎉</h1>
+  <button id="btn">Toggle</button>
+  <script>
+    console.log("JS is running");
+    const msg = document.getElementById("msg");
+    document.getElementById("btn").onclick = () =>
+      msg.textContent = msg.textContent === "It works 🎉" ? "Still working!" : "It works 🎉";
+  </script>
+</body>
+</html>
